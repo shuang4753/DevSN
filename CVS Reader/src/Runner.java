@@ -1,10 +1,14 @@
-import java.io.BufferedReader; import java.io.IOException; import java.nio.charset.StandardCharsets; import java.nio.file.Files; import java.nio.file.Path; import java.nio.file.Paths; import java.util.ArrayList; import java.util.List; 
+import java.util.List; 
 //
-asd
+
 public class Runner {
 
 	public static void main(String[] args) {
-		
+		List<Book> books = UtilitiesCSV.readBookFromCSV("books.txt");
+		for (Book b : books)
+		{
+			System.out.println(b);
+		}
 
 	}
 
