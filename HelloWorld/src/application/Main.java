@@ -1,5 +1,7 @@
 package application;
-	
+import Utilities.*;
+import java.util.List;
+
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
@@ -17,14 +19,19 @@ public class Main extends Application {
     
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Hello World!");
+    	List<Book> books = UtilitiesCSV.readBookFromCSV("books.txt");
+    	int size = books.size();
+    	
+        primaryStage.setTitle("This console");
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
  
             @Override
             public void handle(ActionEvent event) {
-                System.out.println("Hello World!");
+            	
+        		if (size > )
+
             }
         });
         
