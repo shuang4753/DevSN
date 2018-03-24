@@ -22,16 +22,14 @@ public class Main extends Application {
     	List<Book> books = UtilitiesCSV.readBookFromCSV("books.txt");
     	int size = books.size();
     	
-        primaryStage.setTitle("This console");
+        primaryStage.setTitle("HelloWorld");
         Button btn = new Button();
         btn.setText("Say 'Hello World'");
         btn.setOnAction(new EventHandler<ActionEvent>() {
  
             @Override
             public void handle(ActionEvent event) {
-            	
-        		if (size > )
-
+            	System.out.println("Hello World");
             }
         });
         
